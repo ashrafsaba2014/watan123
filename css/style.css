@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 1000px;
+}
+
+.container{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    overflow: auto;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+
+
+.right{
+    overflow: auto;    
+    overflow-y: hidden;
+    float: right;
+}
+
+.left{
+    float: left;
+    overflow-y: hidden;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.aaa:hover{
+    background-color: red;
+    -webkit-animation: random 2s infinite;
+    animation: random 2s infinite;    
+}
+
+.aaa{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding-left: 5px;
+    padding-top: 4px;
+}
+
+.bbb{
+    padding-left: 3px;
+}
+
+.ccc{
+    padding-left: 7px;
+}
+
+
+
+.son{
+    width: 100px;
+    overflow: auto;
+    overflow-y: hidden;
+    float: left;
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;    
+}
+
+.son1{
+    height: 50px;    
+}
+
+.son_hover:hover .line{
+    visibility: visible;    
+    transition: opacity 2s ease-in-out; 
+    background-color: rgb(224, 202, 5);   
+    opacity: 1;    
+
+    -webkit-animation: random 2s infinite;
+    animation: random 2s infinite;    
+}
+
+@keyframes  random {
+    15% { background-color: red; } 
+    30% { background-color: yellow; } 
+    45% { background-color: green; } 
+    60% { background-color: blue; }
+    75% { background-color: white; }  
+}
+
+.line{
+    width: 90%;
+    height: 5px;
+    background-color: rgb(224, 5, 5);
+    float: left;
+    position: absolute;    
+    top: 10%;
+    left: 5px;    
+    visibility: hidden;    
+    /* opacity: 0; */    
+}
+
+.vertical{
+    width: 1px;
+    height: 25px;
+    background-color: white;
+    float: left;
+    margin-top: 10px;
+}
+
+.p1{
+    float: left;
+    margin-left: 20px;
+    padding-top: 12px;
+    font-size: 19px;
+}
+
+.p2{
+    float: left;
+    margin-left: 40px;
+    padding-top: 12px;
+    font-size: 19px;
+}
+
+.p3{
+    float: left;
+    margin-left: 30px;
+    padding-top: 12px;
+    font-size: 19px;
+}
+
+
